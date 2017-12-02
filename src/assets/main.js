@@ -3,7 +3,7 @@ let attempt = document.getElementById('attempt');
 
 function guess() {
     let input = document.getElementById('user-guess');
-    var answer = function setHiddenFields () {
+    function setHiddenFields (answer) {
     return Math.floor(Math.random() * 9999);
     }//add functionality to guess function here
 }
