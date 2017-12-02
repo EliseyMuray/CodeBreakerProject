@@ -13,16 +13,4 @@ function setHiddenFields () {
 return answer.value;
 };
 
-function setMessage (message) {
-
-};
-
-function validateInput(namber.value) {
-  if namber.length = 4 {
-    return true
-  } else {
-    return false
-  }
-};
-
 //implement new functions here
