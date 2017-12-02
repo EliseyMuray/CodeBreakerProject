@@ -22,6 +22,6 @@ function validateInput(input.value) {
   } else {
     return false
   }
-  }
+}
 
 //implement new functions here
