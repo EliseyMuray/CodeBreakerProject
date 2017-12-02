@@ -11,7 +11,7 @@ function setHiddenFields () {
   while (answer.lenght < 4) {
   answer.value = 0 + answer.toString();
   }
-
+return answer;
 }
 
 //implement new functions here
