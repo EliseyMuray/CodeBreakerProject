@@ -5,7 +5,7 @@ function guess() {
     let input = document.getElementById('user-guess');
 //add functionality to guess function here
 }
-function setHiddenFields () {
+answer = function setHiddenFields () {
 return Math.floor(Math.random() * 9999);
 }
 
