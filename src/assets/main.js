@@ -5,8 +5,12 @@ function guess() {
     let input = document.getElementById('user-guess');
 //add functionality to guess function here
 }
-answer = function setHiddenFields () {
-return Math.floor(Math.random() * 9999);
+function setHiddenFields () {
+  var answer = Math.floor(Math.random() * 9999);
+  while (answer.lenght != 4) {
+        
+  }
+return answer;
 }
 
 
