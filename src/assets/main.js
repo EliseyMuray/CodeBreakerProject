@@ -12,6 +12,16 @@ function setHiddenFields () {
   }
 return answer.value;
 }
+function setMessage (message) {
 
+}
+
+function validateInput(input.value) {
+  if input.length = 4 {
+    return true
+  } else {
+    return false
+  }
+  }
 
 //implement new functions here
