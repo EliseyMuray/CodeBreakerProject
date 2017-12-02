@@ -6,9 +6,8 @@ function guess() {
 //add functionality to guess function here
 }
 function setHiddenFields () {
-
   let answer = function getRandomArbitrary(min, max) {
-  return Math.floor(Math.random() * 9999);
+  return Math.floor(Math.random() * (max - min) + min);
 }
   while (answer.lenght < 4) {
   "0" + toString(answer)
