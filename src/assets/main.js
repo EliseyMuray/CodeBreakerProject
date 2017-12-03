@@ -7,7 +7,7 @@ function guess() {
        setHiddenFields ();
      }
 //add functionality to guess function here
-};
+}
 
 function setHiddenFields () {
   answer.value = Math.floor(Math.random() * 9999).toString();
@@ -15,9 +15,10 @@ function setHiddenFields () {
   while (answer.lenght < 4) {
   answer.value = "0" + answer.value;
   }
-};
-function setMessage (text) {
-  message.innerHTML = <p id="message" class="message">"text"</p>
-};
+}
+
+function setMessage (message) {
+  message.innerHTML = <p id="message" class="message">"message"</p>
+}
 
 //implement new functions here
