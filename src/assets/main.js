@@ -11,7 +11,9 @@ function setHiddenFields () {
   while (answer.lenght < 4) {
   answer.value = 0 + "answer.toString()";
   }
+  attempt.value = "0";
 return answer;
 }
 
+function setMessage ()
 //implement new functions here
