@@ -8,8 +8,8 @@ function guess() {
 
 function setHiddenFields () {
   answer.value = Math.floor(Math.random() * 9999);
-  while (answer.value.lenght < 4) {
-  answer.value = 0 + "answer.value.toString()";
+  while (answer.lenght < 4) {
+  answer.value = 0 + "answer.toString()";
   }
 return answer;
 }
