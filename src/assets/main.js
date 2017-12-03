@@ -6,13 +6,17 @@ function guess() {
      if(answer.value == "" || attempt.value == "") {
        setHiddenFields ();
      }
-     if validateInput(input.value)
+     if (validateInput(input.value) = false) {
+       return false;
+     } else {
+       attempt.value ++;
+     }
 //add functionality to guess function here
 }
 
 function setHiddenFields () {
   answer.value = Math.floor(Math.random() * 9999).toString();
-  attempt.value = "0";
+  attempt.value = 0;
   while (answer.lenght < 4) {
   answer.value = "0" + answer.value;
   }
