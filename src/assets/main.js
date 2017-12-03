@@ -6,10 +6,10 @@ function guess() {
      if(answer.value == "" || attempt.value == "") {
        setHiddenFields ();
      }
-     if (validateInput(input.value) == true) {
-attempt.value ++;
-      } else {
+     if (!validateInput(input.value)) {
        return ;
+      } else {
+      attempt.value ++;
      }
 //add functionality to guess function here
 }
@@ -25,7 +25,6 @@ function setHiddenFields() {
 function setMessage (message) {
   document.getElementById('message').innerHTML=message;
 }
-
 
 function validateInput(input) {
     if(input.length != 4) {
