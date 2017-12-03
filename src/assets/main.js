@@ -15,8 +15,9 @@ function setHiddenFields () {
   while (answer.lenght < 4) {
   answer.value = "0" + answer.value;
   }
-
 };
-
+function setMessage (text) {
+  message.innerHTML = <p id="message" class="message">"text"</p>
+};
 
 //implement new functions here
