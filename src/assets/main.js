@@ -7,7 +7,7 @@ function guess() {
        setHiddenFields ();
      }
      if (validateInput(input.value) == true) {
-         attempt.value ++;
+attempt.value ++;
       } else {
        return ;
      }
