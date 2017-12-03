@@ -22,13 +22,11 @@ function setMessage (message) {
 }
 
 function validateInput (input) {
-  input.value = input.toString();
-  if  (input.lenght == 4) {
-    return true;
-  } else {
-      setMessage ("Guesses must be exactly 4 characters long.");
-      return false;
+  if  (input.lenght != 4) {
+    setMessage ("Guesses must be exactly 4 characters long.");
+    return false;
   }
+  return true;
 }
 
 //implement new functions here
