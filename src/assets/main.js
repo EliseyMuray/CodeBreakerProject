@@ -3,6 +3,9 @@ let attempt = document.getElementById('attempt');
 
 function guess() {
     let input = document.getElementById('user-guess');
+     if(answer.value == "" || attempt.value == "") {
+       setHiddenFields ();
+     }
 //add functionality to guess function here
 };
 
