@@ -14,13 +14,12 @@ function guess() {
 //add functionality to guess function here
 }
 
-function setHiddenFields () {
-  answer.value = Math.floor(Math.random() * 9999).toString();
-
-  while (answer.value.lenght < 4) {
-  answer.value = "0" + answer.value;
-  }
-  attempt.value = 0;
+function setHiddenFields() {
+    answer.value = Math.floor(Math.random() * 10000).toString();
+    while(answer.value.length < 4) {
+        answer.value = "0" + answer.value;
+    }
+    attempt.value = 0;
 }
 
 function setMessage (message) {
