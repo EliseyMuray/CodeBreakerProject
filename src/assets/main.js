@@ -15,7 +15,7 @@ function guess() {
 }
 
 function setHiddenFields() {
-    answer.value = Math.floor(Math.random() * 9999).toString();
+    answer.value = Math.floor(Math.random() * 10000).toString();
     while(answer.value.length < 4) {
         answer.value = "0" + answer.value;
     }
@@ -26,12 +26,12 @@ function setMessage (message) {
   document.getElementById('message').innerHTML=message;
 }
 
-function validateInput (input) {
-  if(input.lenght != 4) {
-    setMessage ("Guesses must be exactly 4 characters long.");
-    return false;
-  }
-  return true;
-}
 
+function validateInput(input) {
+    if(input.length != 4) {
+        setMessage('Guesses must be exactly 4 characters long.');
+        return false;
+    }
+    return true;
+}
 //implement new functions here
