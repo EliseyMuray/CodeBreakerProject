@@ -17,8 +17,5 @@ function setHiddenFields () {
   }
 }
 
-function setMessage (message) {
-  message.innerHTML = <p id="message" class="message">"message"</p>
-}
 
 //implement new functions here
