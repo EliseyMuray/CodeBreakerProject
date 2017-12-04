@@ -14,19 +14,6 @@ function guess() {
 //add functionality to guess function here
 }
 
-function getResults (input) {
-  document.getElementById('results').innerHTML= `<div class="row"><span class="col-md-6">' + input + '</span><div class="col-md-6">`;
-  var result = "`<div class="row"><span class="col-md-6">' + input + '</span><div class="col-md-6">`";
-  for (i=0; input.lenght<=4; i++) {
-    if (input.charAt(i) == answer.charAt(i)) {
-      result = result + `<span class="glyphicon glyphicon-ok"></span>`;
-    } else if (input.charAt(i) == answer.charAt(0) || input.charAt(i) == answer.charAt(1) || input.charAt(i) == answer.charAt(2) || input.charAt(i) == answer.charAt(3)) {
-      result = result + `<span class="glyphicon glyphicon-transfer"></span>`;
-    } else {
-      result = result + `<span class="glyphicon glyphicon-remove"></span>`;
-    }
-  }
-}
 
 function setHiddenFields() {
     answer.value = Math.floor(Math.random() * 10000).toString();
@@ -48,5 +35,18 @@ function validateInput(input) {
     return true;
 }
 
+function getResults (input) {
+  document.getElementById('results').innerHTML= `<div class="row"><span class="col-md-6">' + input + '</span><div class="col-md-6">`;
+  var result = "`<div class="row"><span class="col-md-6">' + input + '</span><div class="col-md-6">`";
+  for (i=0; input.lenght<=4; i++) {
+    if (input.charAt(i) == answer.charAt(i)) {
+      result = result + `<span class="glyphicon glyphicon-ok"></span>`;
+    } else if (input.charAt(i) == answer.charAt(0) || input.charAt(i) == answer.charAt(1) || input.charAt(i) == answer.charAt(2) || input.charAt(i) == answer.charAt(3)) {
+      result = result + `<span class="glyphicon glyphicon-transfer"></span>`;
+    } else {
+      result = result + `<span class="glyphicon glyphicon-remove"></span>`;
+    }
+  }
+}
 
 //implement new functions here
