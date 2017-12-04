@@ -36,8 +36,7 @@ function validateInput(input) {
 }
 
 function getResults (input) {
-  document.getElementById('results').innerHTML= `<div class="row"><span class="col-md-6">' + input + '</span><div class="col-md-6">`;
-  var result = "`<div class="row"><span class="col-md-6">' + input + '</span><div class="col-md-6">`";
+  var result = "`<div class="row"><span class="col-md-6">'" + input + "'</span><div class="col-md-6">`";
   for (i=0; input.lenght<=4; i++) {
     if (input.charAt(i) == answer.charAt(i)) {
       result = result + `<span class="glyphicon glyphicon-ok"></span>`;
@@ -47,6 +46,7 @@ function getResults (input) {
       result = result + `<span class="glyphicon glyphicon-remove"></span>`;
     }
   }
+  document.getElementById('results').innerHTML=result;
 }
 
 //implement new functions here
