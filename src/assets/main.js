@@ -33,4 +33,18 @@ function validateInput(input) {
     }
     return true;
 }
+
+function getResults (input) {
+  document.getElementById('results').innerHTML=input;
+  var input = "";
+  for (i=0; input.lenght<=4; i++) {
+    if (input.charAt(i) == answer.charAt(i)) {
+      input = input + `<span class="glyphicon glyphicon-ok"></span>`;
+    } else if (input.charAt(i) == answer.charAt(0) || input.charAt(i) == answer.charAt(1) || input.charAt(i) == answer.charAt(2) || input.charAt(i) == answer.charAt(3)) {
+      input = input + `<span class="glyphicon glyphicon-transfer"></span>`;
+    } else {
+      input = input + `<span class="glyphicon glyphicon-remove"></span>`;
+    }
+  }
+}
 //implement new functions here
