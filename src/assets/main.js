@@ -38,9 +38,9 @@ function validateInput(input) {
 function getResults (input) {
   var result = "`<div class="row"><span class="col-md-6">'" + input + "'</span><div class="col-md-6">`";
   for (i=0; input.lenght<4; i++) {
-    if (input.charAt(i) == answer.charAt(i)) {
+    if (input.charAt(i) == answer.value.charAt(i)) {
       result = result + `<span class="glyphicon glyphicon-ok"></span>`;
-    } else if (input.charAt(i) == answer.charAt(0) || input.charAt(i) == answer.charAt(1) || input.charAt(i) == answer.charAt(2) || input.charAt(i) == answer.charAt(3)) {
+    } else if (input.charAt(i) == answer.value.charAt(0) || input.charAt(i) == answer.value.charAt(1) || input.charAt(i) == answer.value.charAt(2) || input.charAt(i) == answer.value.charAt(3)) {
       result = result + `<span class="glyphicon glyphicon-transfer"></span>`;
     } else {
       result = result + `<span class="glyphicon glyphicon-remove"></span>`;
