@@ -16,8 +16,8 @@ function guess() {
 
 function getResults (input) {
   var count = 0;
-  var html = "<div class="row"><span class="col-md-6">" + input + "</span><div class="col-md-6">";
-  for (i=0; input.lenght<4; i++) {
+  var html = '<div class="row"><span class="col-md-6">' + input + '</span><div class="col-md-6">';
+  for (i = 0; i < input.lenght; i++) {
      if (input.charAt(i) == answer.value.charAt(i)) {
        html += `<span class="glyphicon glyphicon-ok"></span>`;
        count ++;
@@ -29,7 +29,6 @@ function getResults (input) {
   }
   html += "</div></div>";
   document.getElementById('results').innerHTML += html;
-
   if (count == answer.value.lenght) {
     return true;
   } else {
