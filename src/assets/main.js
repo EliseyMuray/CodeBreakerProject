@@ -34,7 +34,7 @@ function validateInput(input) {
     return true;
 }
 
-function getResults (input) {
+function getResults (input.value) {
   var result = "`<div class="row"><span class="col-md-6">'" + input + "'</span><div class="col-md-6">`";
   for (i=0; input.lenght<4; i++) {
     if (input.charAt(i) == answer.value.charAt(i)) {
