@@ -39,7 +39,7 @@ function getResults(input){
 
     document.getElementById('results').innerHTML += html;
 
-    if(correct == input.length) {
+    if(input == answer.value) {
         return true;
     } else {
         return false;
