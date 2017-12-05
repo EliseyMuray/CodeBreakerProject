@@ -81,7 +81,12 @@ function showAnswer (success) {
     code.innerHTML=answer.value;
 }
 
-
+function showReplay () {
+  var guessingDiv = document.getElementById('guessing-div');
+  var replayDiv = document.getElementById('replay-div');
+  guessingDiv.style.display = "none";
+  replayDiv.style.display = "block";
+}
 
 
 //implement new functions here
