@@ -15,12 +15,12 @@ function guess() {
 }
 
 function getResults (input) {
-  var count = 0;
+  var correct = 0;
   var html = '<div class="row"><span class="col-md-6">' + input + '</span><div class="col-md-6">';
   for (i = 0; i < input.lenght; i++) {
-     if (input.charAt(i) == answer.value.charAt(i)) {
+     if(input.charAt(i) == answer.value.charAt(i)) {
        html += `<span class="glyphicon glyphicon-ok"></span>`;
-       count ++;
+       correct ++;
      } else if (input.value.indexOf(input.charAt(i))>-1) {
        html += `<span class="glyphicon glyphicon-transfer"></span>`;
      } else {
@@ -30,12 +30,14 @@ function getResults (input) {
   html += "</div></div>";
   document.getElementById('results').innerHTML += html;
 
-  if (count == input.lenght) {
+  if(correct == input.lenght) {
         return true;
   } else {
         return false;
   }
 }
+
+
 
 
 function setHiddenFields() {
