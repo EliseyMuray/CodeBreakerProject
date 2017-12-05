@@ -36,7 +36,7 @@ function getResults(input){
         return true;
   } else {
         return false;
-  }
+  } 
 }
 
 
