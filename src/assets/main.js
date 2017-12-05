@@ -14,19 +14,19 @@ function guess() {
 //add functionality to guess function here
 }
 
-function getResults (input.value) {
-  var result = "<div class="row"><span class="col-md-6">" + input + "</span><div class="col-md-6">";
+function getResults (input) {
+  var html = "<div class="row"><span class="col-md-6">" + input + "</span><div class="col-md-6">";
   for (i=0; input.lenght<4; i++) {
     if (input.charAt(i) == answer.value.charAt(i)) {
-       result += `<span class="glyphicon glyphicon-ok"></span>`;
+       html += `<span class="glyphicon glyphicon-ok"></span>`;
     } else if (input.value.indexOf(input.charAt(i))>-1) {
-       result += `<span class="glyphicon glyphicon-transfer"></span>`;
+       html += `<span class="glyphicon glyphicon-transfer"></span>`;
     } else {
-       result += `<span class="glyphicon glyphicon-remove"></span>`;
+       html += `<span class="glyphicon glyphicon-remove"></span>`;
     }
   }
-  result += "</div></div>";
-  document.getElementById('results').innerHTML += result;
+  html += "</div></div>";
+  document.getElementById('results').innerHTML += html;
 }
 
 function setHiddenFields() {
