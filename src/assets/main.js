@@ -14,10 +14,12 @@ function guess() {
        setMessage('You Lose! :(');
     if (getResults(input.value)) {
          setMessage("You Win! :)");
+         return true;
        } else if (attempt.value < 10){
          setMessage("Incorrect, try again.");
        } else {
         setMessage("You Lose! :(");
+        return false;
   }
 //add functionality to guess function here
 }
@@ -69,6 +71,17 @@ function validateInput(input) {
     }
     return true;
 }
+
+function showAnswer (answer.value) {
+    var code = document.getElementById('code');
+    document.getElementById('code').innerHTML=answer.value;
+    if (guess()) {
+      code.className += " success";
+    } else {
+      code.className += " failure";
+    }
+}
+
 
 
 
