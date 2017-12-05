@@ -17,10 +17,6 @@ function guess() {
 function getResults(input){
   var correct = 0;
   var html = '<div class="row"><span class="col-md-6">' + input + '</span><div class="col-md-6">';
-  for (i = 0; i < input.lenght; i++)
-  {
-    if(input.charAt(i) == answer.value.charAt(i))
-      {
     var correct = 0;
     var html = '<div class="row"><span class="col-md-6">' + input + '</span><div class="col-md-6">';
     for(i = 0; i < input.length; i++)
