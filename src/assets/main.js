@@ -11,15 +11,17 @@ function guess() {
       } else {
       attempt.value ++;
      }
+       setMessage('You Lose! :(');
+      } else {
+      setMessage('You Win! :)');
+     }
 //add functionality to guess function here
 }
 
 function getResults(input){
-  var correct = 0;
-  var html = '<div class="row"><span class="col-md-6">' + input + '</span><div class="col-md-6">';
     var correct = 0;
     var html = '<div class="row"><span class="col-md-6">' + input + '</span><div class="col-md-6">';
-    for(i = 0; i < answer.length; i++)
+    for(i = 0; i < answer.value.length; i++)
     {
         if(input.charAt(i) == answer.value.charAt(i))
         {
