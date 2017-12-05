@@ -71,15 +71,14 @@ function validateInput(input) {
     return true;
 }
 
-function showAnswer (answer.value) {
+function showAnswer (success) {
     var code = document.getElementById('code');
-
-    if (guess()) {
+    if (success) {
       code.className += " success";
     } else {
       code.className += " failure";
     }
-    document.getElementById('code').innerHTML=answer.value;
+    code.innerHTML=answer.value;
 }
 
 
