@@ -74,12 +74,13 @@ function validateInput(input) {
 
 function showAnswer (answer.value) {
     var code = document.getElementById('code');
-    document.getElementById('code').innerHTML=answer.value;
+
     if (guess()) {
       code.className += " success";
     } else {
       code.className += " failure";
     }
+    document.getElementById('code').innerHTML=answer.value;
 }
 
 
