@@ -14,11 +14,15 @@ function guess() {
     if (getResults(input.value)) {
          setMessage("You Win! :)");
          return true;
+         showAnswer(true);
+         showReplay();
        } else if (attempt.value < 10){
          setMessage("Incorrect, try again.");
        } else {
         setMessage("You Lose! :(");
         return false;
+        showAnswer(false);
+        showReplay();
   }
 //add functionality to guess function here
 }
