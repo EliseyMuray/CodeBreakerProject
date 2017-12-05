@@ -30,7 +30,7 @@ function getResults (input) {
   html += "</div></div>";
   document.getElementById('results').innerHTML += html;
 
-  if (count == answer.lenght) {
+  if (count == input.lenght) {
         return true;
   } else {
         return false;
