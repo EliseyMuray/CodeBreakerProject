@@ -21,8 +21,8 @@ function getResults(input){
   {
     if(input.charAt(i) == answer.value.charAt(i))
       {
-    let correct = 0;
-    let html = '<div class="row"><span class="col-md-6">' + input + '</span><div class="col-md-6">';
+    var correct = 0;
+    var html = '<div class="row"><span class="col-md-6">' + input + '</span><div class="col-md-6">';
     for(i = 0; i < input.length; i++)
     {
         if(input.charAt(i) == answer.value.charAt(i))
