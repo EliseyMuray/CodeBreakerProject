@@ -29,13 +29,13 @@ function getResults (input) {
   }
   html += "</div></div>";
   document.getElementById('results').innerHTML += html;
-  if (count == answer.value.lenght) {
-    return true;
+
+  if (count == answer.lenght) {
+        return true;
   } else {
-    return false;
+        return false;
   }
 }
-
 
 
 function setHiddenFields() {
